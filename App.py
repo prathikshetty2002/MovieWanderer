@@ -7,11 +7,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_URL = "https://api-inference.huggingface.co/models/j-hartmann/emotion-english-distilroberta-base"
-headers = {"Authorization": "Bearer " +  os.getenv('HUGGINGFACE_API') }
-def query(payload):
-	response = requests.post(API_URL, headers=headers, json=payload)
-	return response.json()
+# API_URL = "https://api-inference.huggingface.co/models/j-hartmann/emotion-english-distilroberta-base"
+# headers = {"Authorization": "Bearer " +  os.getenv('HUGGINGFACE_API') }
+# def query(payload):
+# 	response = requests.post(API_URL, headers=headers, json=payload)
+# 	return response.json()
 # def query(payload):
 #     response = requests.post(API_URL, headers=headers, json=payload)
 #     sentiment= response.json()
